@@ -1,0 +1,22 @@
+{
+  "listaOrdenes":[
+    {
+      "id": "111",
+      "descripcion": "mi primera orden de ejemplo base",
+      "precio": 122.45,
+      "cantidad": 14
+    },
+    {
+      "id": "222",
+      "descripcion": "mi 2da orden de ejemplo base",
+      "precio": 455,
+      "cantidad": 5
+    },
+    {
+      "id": "333",
+      "descripcion": "mi 3ra orden de ejemplo base",
+      "precio": 672.45,
+      "cantidad": 22
+    }
+  ]
+}

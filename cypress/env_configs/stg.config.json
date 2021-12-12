@@ -1,0 +1,15 @@
+{
+    "baseUrl": "http://automationpractice.com/index.php",
+    "video": false,
+    "screenshotOnRunFailure": false,
+    "integrationFiles": "cypress/integration/automation-practice",
+    "ignoreTestFiles": "**/other-tests/*",
+    "env":{
+        "user_email": "cypress.demo@test.com",
+        "user_password": "12345"
+    },
+    "reporter":"junit",
+    "reporterOptions":{
+        "mochaFile":"results/results-[hash].xml"
+    }
+}

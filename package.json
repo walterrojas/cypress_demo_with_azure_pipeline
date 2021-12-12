@@ -1,0 +1,27 @@
+{
+  "name": "cypress_demo_azure_pipeline",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "merge-reports": "jrm ./results/combined-report.xml \"./results/results-*.xml\"",
+    "electron-tests-qa": "cypress run --env configFile=qa",
+    "cypress:electron-tests-qa": "npm run electron-tests-qa || npm run merge-reports",
+    "electron-tests-stg": "cypress run --env configFile=stg",
+    "cypress:electron-tests-stg": "npm run electron-tests-stg || npm run merge-reports",
+    "chrome-tests-qa": "cypress run --env configFile=qa --browser chrome --headless",
+    "cypress:chrome-tests-qa": "npm run chrome-tests-qa || npm run merge-reports",
+    "chrome-tests-stg": "cypress run --env configFile=stg --browser chrome --headless",
+    "cypress:chrome-tests-stg": "npm run chrome-tests-stg || npm run merge-reports"
+  },
+  "keywords": [],
+  "author": "Walter Rojas",
+  "license": "MIT",
+  "dependencies": {
+    "cypress": "^9.1.1"
+  },
+  "devDependencies": {
+    "cypress-xpath": "^1.6.2",
+    "junit-report-merger": "^3.0.2"
+  }
+}
