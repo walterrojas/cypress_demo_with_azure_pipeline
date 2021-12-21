@@ -34,7 +34,7 @@ _**Note:** Headless Browsers are those which actually access the Web Page, but t
 - **Run all automated tests with headless browser in QA environment**
 
 ```
-npm run cypress:qa-tests
+npm run cypress:electron-tests-qa
 ```
 
 
